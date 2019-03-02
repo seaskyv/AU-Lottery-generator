@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--Lotteries number generator.
+This page include Lotto, OZ Lotto and Powerball-->
+<html>
+	<head>
+	<title>NSW Lotteries number generator </title>
+		<!--Any Comment-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+	
+	<script type="text/javascript" src="/javascripts/mainpage.js"> </script>
+	</head>
+	<body>
+		<table style="width:100%">
+			<tr>
+				<th></th>
+					<th bgcolor=#FEEFB3><b><h2><font color=#D8000C>Please note, this app does not encourage gambling and not design for any gambling purpose.</font></h2></b></th>
+				<th></th>
+			</tr>
+			<tr><th> </th></tr>
+		</table>
+		<div class="container">
+  			<img src="/images/hand-key-lighting-thread.jpg" alt="Snow" style="width:100%;">
+  			<div class="magic"><font size="4">Please input your magic number below:</font></div>
+      <form action="/games" method="post">
+        <div class="magicNumber"><input type="text" id="magicNumber" size="32" name="magic" placeholder="Magic number is a postive integer"> <button type="button" onclick="submitMagic()">OK</button></div>
+			  <div id="welcomeDiv"  style="display:none;" class="answer_list" >
+  				<div class="showSeed">
+					  <div class="textarea_type_div" contenteditable="true"><span class="whitetext" id="seed"></span></div>
+          </div>
+        </div>
+			  <div class="games"><div class="btn-group">
+				  <button class="game lotto zoom" name="game" value="lotto" style="vertical-align:middle" onclick="window.location.href='/games/lotto.html'"><span>Lotto</span></button>
+  				<button class="game powerball zoom " name="game" value="powerball" style="vertical-align:middle" onclick="window.location.href='/games/Powerball.html'"><span>Powerball</span></button>
+  				<button class="game OZlotto zoom" name="game" value="ozlotto" style="vertical-align:middle" onclick="window.location.href='/games/OZlotto.html'"><span>OZlotto</span></button>
+        </div></div>
+      </form>
+		</div>
+	</body>
+</html>
+

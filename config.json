@@ -1,0 +1,28 @@
+{
+    "development": {
+        "config_id": "development",
+        "app_name": "Lottery",
+        "app_desc": "Lottery desc",
+        "node_port": 3300,
+        "json_indentation": 4,
+        "API_location": "http://localhost:9090",
+        "API_URI": "/api"
+    },
+    "testing": {
+        "config_id": "testing",
+        "API_location": "http://localhost:9090",
+        "API_URI": "/api"
+    },
+    "staging": {
+        "config_id": "staging",
+        "node_port": 8080,
+        "API_location": "http://localhost:9090",
+        "API_URI": "/api"
+    },
+    "production": {
+        "config_id": "production",
+        "node_port": 8080,
+        "API_location": "http://localhost:9090",
+        "API_URI": "/api"
+    }
+}

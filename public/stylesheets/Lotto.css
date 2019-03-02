@@ -1,0 +1,64 @@
+body, html {
+    height: 100%;
+      margin: 0;
+}
+table {
+  border: 3px solid black;
+  border-collapse: collapse;
+  opacity: 0.8;
+  background: red;
+  width: 80%;
+  font-weight: bold;
+}
+th{
+    color : black;
+    background-color: rgba(255, 174, 0, 0.877);
+}
+td{
+  color : white;
+  text-align: center;
+}
+
+td:nth-child(1){
+  color : black;
+  width : 20%;
+  font-style: italic;
+}
+
+colgroup {
+    display: table-column-group;
+}
+col {
+    background: rgba(255, 174, 0, 0.877);
+    color : black;
+}
+tr:hover {
+  background-color: sandybrown ;
+}
+.container {
+      position: relative;
+      text-align: center;
+      color: white;
+}
+.input {
+    position: relative;
+     text-align: center;
+    top: 50px
+}
+.output {
+    position: relative;
+     text-align: center;
+    top: 100px
+}
+.ccc {
+      background-image: url("../images/wood-colors-wall-pattern.jpg");
+      background-repeat: repeat;
+}
+.panel {
+    background-color: red;
+    width: 50%;
+    height: 100px;
+    margin: auto;
+    border-radius: 25%;
+    color: white;
+}

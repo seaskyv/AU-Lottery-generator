@@ -1,0 +1,125 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+table, th, td{
+  border: none;
+}
+
+.textarea_type_div {
+width: 500px; 
+height: 50px; 
+background-color: #333333;
+font-family: Arial; font-size: small; 
+font-weight: normal;
+text-align: left; 
+color: #FF0000;
+}
+
+.container {
+position: relative;
+text-align: center;
+color: white;
+}
+
+.magic {
+position: absolute;
+top: 140px;
+left: 160px;
+}
+
+.magicNumber {
+position: absolute;
+top: 188px;
+left: 160px;
+}
+
+.showSeed {
+position: absolute;
+top: 218px;
+left: 160px;
+}
+
+.games {
+position: absolute;
+top: 128px;
+right: 450px;
+}
+
+.redFont { color:#FF0000;}
+.blueFont { color:#0000FF;}
+.whiteFont { color:#FFFFFF;}
+.blackFont { color:#000000;}
+
+.btn-group .game {
+/* Green */
+border: 1px solid yellow;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+width: 150px;
+height: 150px;
+display: block;
+border-radius: 50%;
+outline-style: none;
+}
+
+.powerball {
+background-color: blue;
+}
+
+.lotto {
+background-color: red;
+}
+.OZlotto {
+background-color: green;
+}
+
+
+.btn-group .game:not(:last-child) {
+border-bottom: none; /* Prevent double borders */
+}
+
+.zoom {
+
+transition: transform .2s;
+margin: 0 auto;
+}
+
+.zoom:hover {
+-ms-transform: scale(1.5); /* IE 9 */
+-webkit-transform: scale(1.5); /* Safari 3-8 */
+transform: scale(1.5); 
+}
+.game span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.game span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.game:hover span {
+padding-right: 25px;
+}
+
+.game:hover span:after {
+opacity: 1;
+right: 0;
+}
+.game:active {
+transform: translateY(4px);
+}

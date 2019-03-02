@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Lotto-->
+<html>
+	<head>
+		<title>Lotto</title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/OZlotto.css">
+		<script type="text/javascript" src="/javascripts/sendRequest.js"> 
+		</script>
+
+	</head>
+	<body class='ccc'>
+	
+	<div class="input"><div class="panel">How many games you want to play ?
+		<form>
+			<input type="text" id="numOfGamesToPlay" size="28" name="numOfGame" value="">
+			<select id="myDropDown" name="system" value>
+				<option value=7 selected="selected">System 7</option>
+				<option value=8>System 8</option>
+				<option value=9>System 9</option>
+				<option value=10>System 10</option>
+				<option value=11>System 11</option>
+				<option value=12>System 12</option>
+				<option value=13>System 13</option>
+				<option value=14>System 14</option>
+				<option value=15>System 15</option>
+				<option value=16>System 16</option>
+				<option value=17>System 17</option>
+				<option value=18>System 18</option>
+			</select>
+			<button type="button" onclick="showNumbers('<%= magic %>','OZLotto',numOfGame.value)">Let's GO</button>
+			<div name="magic" value=<%= magic %></div>
+		</form>
+	<br></br>
+	<center id="warning"></center>
+	<center id="postHint"></center>
+	</div></div>
+	<div id="postNubmers"></div>
+	</body>
+
+</html>
