@@ -54,4 +54,4 @@ Under the MIT License.
 - Push to your fork Open a Pull Request!
 
 ## Related repository
-```https://github.com/seaskyv/AU-Lottery-generator-API.git```
+```https://github.com/seaskyv/AU-Lottery-generator_API.git```
