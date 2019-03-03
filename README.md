@@ -24,7 +24,7 @@ Node.js v.8.12.0
       $ npm run start
   
   ```
-  - Run in dev evn, with nodemon :
+  - Run in dev ENV with nodemon :
 
   ```  
       $ npm run devstart
