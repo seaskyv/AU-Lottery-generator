@@ -15,6 +15,13 @@ module.exports = function() {
     //console.log(environmentConfig)
 
     //console.log(environmentConfig.API_URI);
+    if(process.env.node_port){
+        environmentConfig.node_port =  process.env.node_port;
+    }
+    
+    if(process.env.API_location){
+        environmentConfig.API_location =  process.env.API_location;
+    }
 
     return environmentConfig
 }
