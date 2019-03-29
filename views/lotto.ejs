@@ -11,7 +11,7 @@
 	<body class='ccc'>
 	
 	<div class="input"><div class="panel">How many games you want to play ?
-		<form action="" method="post">
+		<form>
 			<input type="text" id="numOfGamesToPlay" size="28" name="numOfGame" value="">
 			<select id="myDropDown" name="system" value>
 				<option value=6 selected="selected">System 7</option>
@@ -30,14 +30,14 @@
 				<option value=19>System 19</option>
 				<option value=20>System 20</option>
 			</select>
-			<button type="button" onclick="showNumbers('<%= magic %>','Lotto',numOfGame.value)">Let's GO</button>
+			<button type="button" onclick="showNumbers('<%= magic %>','lotto',numOfGame.value)">Let's GO</button>
 			<div name="magic" value=<%= magic %></div>
 		</form>
 		<br></br>
 		<center id="warning"></center>
 		<center id="postHint"></center>
 	</div></div>
-	<div id="postNubmers"></div
+	<div id="postNubmers"></div>
 	</body>
 
 </html>
