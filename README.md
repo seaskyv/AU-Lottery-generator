@@ -31,6 +31,7 @@ Node.js v.8.12.0
   ```
 - Open the app in your browser by default at `http://localhost:3300/`.
 - Config file : `config.json`
+- backend server hostname and port number can be specified by ENV variable backendhost and backendport
 
 ## Contribute
 Under the MIT License. 
