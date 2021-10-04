@@ -56,3 +56,12 @@ Under the MIT License.
 
 ## Related repository
 ```https://github.com/seaskyv/AU-Lottery-generator_API.git```
+
+## Container Image
+location : docker pull seaskyv/aulottery. 
+Port in container is 3300.
+It will pull data from on port 9300:
+# docker run -d --name Lottery -p 8300:3300 --link LotteryAPI:APIHost --env API_location=http://APIHost:9300 seaskyv/aulottery:2.0
+
+# docker run -d --name LotteryAPI -d seaskyv/aulotteryapi:1.0
+It will get data from API on 
